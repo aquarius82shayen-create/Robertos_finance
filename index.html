@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#050b18" />
+  <title>Matteo's Finance</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <main id="app" class="app"></main>
+    <nav class="bottom-nav" aria-label="Navigazione principale">
+      <button data-nav="dashboard" class="nav-item active"><span>⌂</span><small>Dashboard</small></button>
+      <button data-nav="movements" class="nav-item"><span>☷</span><small>Movimenti</small></button>
+      <button id="quickAdd" class="quick-add" aria-label="Aggiungi movimento">＋</button>
+      <button data-nav="forecasts" class="nav-item"><span>▣</span><small>Previsioni</small></button>
+      <button data-nav="goals" class="nav-item"><span>◎</span><small>Obiettivi</small></button>
+    </nav>
+  </div>
+
+  <div id="modalRoot"></div>
+  <script src="app.js"></script>
+</body>
+</html>
